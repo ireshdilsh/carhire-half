@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerViewController">
+   <children>
+      <Button fx:id="addcustomerButon" layoutX="48.0" layoutY="61.0" mnemonicParsing="false" onAction="#addCustmerButton" prefHeight="87.0" prefWidth="100.0" text="Add" />
+      <Button fx:id="deletecustomerButton" layoutX="444.0" layoutY="61.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="87.0" prefWidth="100.0" text="Delete" />
+      <TableView layoutX="40.0" layoutY="190.0" prefHeight="170.0" prefWidth="515.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="250.0" layoutY="61.0" mnemonicParsing="false" onAction="#viewCustomerProfile" prefHeight="87.0" prefWidth="100.0" text="Profile" />
+   </children>
+</AnchorPane>

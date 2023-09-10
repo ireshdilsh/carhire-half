@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="460.0" prefWidth="380.0" style="-fx-background-color: #e6e6e6; -fx-border-style: solid; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="8.0" prefHeight="442.0" prefWidth="356.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="105.0" layoutY="14.0" prefHeight="50.0" prefWidth="146.0" text="Log in" textFill="#1b0202">
+               <font>
+                  <Font name="Algerian" size="44.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameText" layoutX="29.0" layoutY="108.0" prefHeight="43.0" prefWidth="298.0" promptText="Username" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 20px; -fx-background-radius: 20px;" />
+            <PasswordField fx:id="passwordText" layoutX="29.0" layoutY="193.0" prefHeight="43.0" prefWidth="298.0" promptText="Password" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 20px; -fx-background-radius: 20px;" />
+            <Button fx:id="loginButton" layoutX="29.0" layoutY="308.0" mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="43.0" prefWidth="298.0" style="-fx-background-color: #1a3399; -fx-background-radius: 7px;" text="Log in" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Imprint MT Shadow" size="21.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="382.0" text="You Don't have account ?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="203.0" layoutY="378.0" mnemonicParsing="false" onAction="#gotoRegister" style="-fx-background-color: white;" text="Register Here" textFill="#1b4bcf">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <RadioButton layoutX="108.0" layoutY="266.0" mnemonicParsing="false" text="       Remeber me">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </RadioButton>
+            <Line endX="141.39999389648438" endY="0.40000152587890625" layoutX="118.0" layoutY="62.0" startX="-29.199989318847656" startY="0.40000152587890625" />
+            <Separator layoutX="200.0" layoutY="399.0" prefHeight="1.0" prefWidth="102.0" style="-fx-background-color: #1b4bcf;" />
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="274.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/585e4beacb11b227491c3399.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="274.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="275.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/download%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
